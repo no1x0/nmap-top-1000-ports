@@ -3,7 +3,8 @@
 2023 yılında oluşturulan bu repo, `nmap-top-1000-ports.txt` adlı bir dosya içermektedir. Bu dosya, Nmap'in öntanımlı hizmetlerinden en popüler 1000 TCP portunu listelemektedir. Aşağıdaki Linux terminal komutu ile oluşturulmuştur:
 
 ```bash
-grep -v '^#' /usr/share/nmap/nmap-services | grep '/tcp' | sort -rk3 | awk '{print $2}' | cut -d/ -f1 | head -n 1000 > nmap-top-1000-ports.txt```
+grep -v '^#' /usr/share/nmap/nmap-services | grep '/tcp' | sort -rk3 | awk '{print $2}' | cut -d/ -f1 | head -n 1000 > nmap-top-1000-ports.txt
+```
 
 
 ## Komut Açıklaması
